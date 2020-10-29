@@ -22,4 +22,4 @@ jobs:
           # Optional content type (defaults to text/plain):
           content_type: text/plain
           # Optional attachments:
-          attachments: sketch_webserver.ino
+          attachments: ./progetto-esp32/sketch_webserver.ino
