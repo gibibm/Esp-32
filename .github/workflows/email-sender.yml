@@ -5,13 +5,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: git clone https://github.com/gibibm/progetto-esp32
+      - run: ls -l
       - uses: dawidd6/action-send-mail@v2
         with:
           server_address: smtp.gmail.com
           server_port: 465
           username: ${{secrets.MAIL_USERNAME}}
           password: ${{secrets.MAIL_PASSWORD}}
-          subject: 
+          subject: 3AI Voicu e Gibellino - Nuovo commit sulla repo
           # Literal body:
           body: È stato creato un commit sulla repository ${{github.repository}} di Voicu e Gibellino di 3AI.
           # Read file contents as body:
