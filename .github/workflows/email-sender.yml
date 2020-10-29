@@ -14,7 +14,7 @@ jobs:
           password: ${{secrets.MAIL_PASSWORD}}
           subject: 3AI Voicu e Gibellino - Nuovo commit sulla repo
           # Literal body:
-          body: È stato creato un commit sulla repository ${{github.repository}} di Voicu e Gibellino di 3AI.
+          body: È stato creato un commit sulla repository ( ${{github.commit_message}} ) di Voicu e Gibellino di 3AI. https://github.com/gibibm/progetto-esp32
           # Read file contents as body:
           # body: file://githubactions-test/index.js
           to: everlastmailplay@gmail.com
