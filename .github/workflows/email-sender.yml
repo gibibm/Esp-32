@@ -21,4 +21,4 @@ jobs:
           # Optional content type (defaults to text/plain):
           content_type: text/plain
           # Optional attachments:
-          attachments: ./githubactions-test/Web\ App/index.html
+          attachments: ./progetto-esp32/Web\ App/index.html
