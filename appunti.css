@@ -1,0 +1,41 @@
+body {
+	margin: 0;
+}
+
+.cont-1 {
+	width: 120px;
+	height: 80px;
+
+	background-color: #2623ec;
+}
+
+.testo-nanez {
+	font-weight: 700; /* Spessore (100-900) */
+  font-size: 20px; /* Grandezza (px, cm, mm, em, rem) */
+  font-family: 'Segoe UI', Helvetica, Arial, sans-serif; /* Famiglia di font */
+
+	color: blue; /* Colore */
+}
+
+#testo-xave {
+  font-size: 3rem;
+  font-family: 'Segoe UI';
+  font-weight: bold;
+  text-align: center;
+}
+
+/* 
+1rem -> si riferisce alla font-size del tag html
+1em -> si riferisce alla font-size del tag genitore
+ */
+/*
+
+.nome-classe {
+
+}
+
+#nome-id {
+
+} 
+
+*/
