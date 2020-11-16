@@ -6,6 +6,12 @@ jobs:
     steps:
       - run: git clone https://github.com/gibibm/progetto-esp32
       - run: ls -l
+      - uses: thedoctor0/zip-release@master
+        with:
+          filename: 'release.zip'
+          exclusions: '*.git* /*node_modules/* .editorconfig'
+          path: ./progetto-esp32
+      - run: ls -l
       - uses: dawidd6/action-send-mail@v2
         with:
           server_address: smtp.gmail.com
@@ -14,7 +20,7 @@ jobs:
           password: ${{secrets.MAIL_PASSWORD}}
           subject: 3AI Voicu e Gibellino - Nuovo commit sulla repo
           # Literal body:
-          body: È stato creato un commit sulla repository ( ${{github.commit_message}} ) di Voicu e Gibellino di 3AI. https://github.com/gibibm/progetto-esp32
+          body: È stato creato un commit sulla repository di Voicu e Gibellino di 3AI. https://github.com/gibibm/progetto-esp32
           # Read file contents as body:
           # body: file://githubactions-test/index.js
           to: everlastmailplay@gmail.com
@@ -22,4 +28,4 @@ jobs:
           # Optional content type (defaults to text/plain):
           content_type: text/plain
           # Optional attachments:
-          attachments: ./progetto-esp32/sketch_webserver.ino
+          attachments: ./release.zip
