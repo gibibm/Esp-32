@@ -1,0 +1,22 @@
+.led-component {
+	display: flex;
+	align-items: center;
+
+	border: 1px solid black;
+  width: 40%;
+  
+  background: #ffffff;
+}
+
+.img-component {
+  width: 4rem;
+  height: 4rem;
+
+  padding: 1rem;
+}
+
+.component-name {
+  margin: 0 auto;
+}
+
+.component-button-container {}

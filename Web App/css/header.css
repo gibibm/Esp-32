@@ -1,0 +1,23 @@
+header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	/* Trasparente */
+	background: rgba(255, 255, 255, 0.3);
+	backdrop-filter: blur(20px);
+
+	height: 3rem;
+
+	padding: 0.8rem;
+
+	border-radius: 0 0 2rem 2rem;
+}
+
+#titolo-app {
+	margin: 0;
+
+	font-family: var(--global-font-family);
+	font-weight: 700;
+	font-size: 2rem;
+}

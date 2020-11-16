@@ -1,0 +1,8 @@
+html {
+	--global-font-family: Montserrat, Helvatica, 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+	background-color: rgb(231, 231, 231);
+	margin: 0;
+}
